@@ -103,6 +103,6 @@ app.delete("/blogs/:id", function(req, res){
         }
     });
 });
-app.listen("1004", function(){
+app.listen(process.env.PORT || "1004", function(){
     console.log("RESTful_Blog_App server started at port 1004");
 });
